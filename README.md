@@ -18,14 +18,13 @@ Esto cambia el prompt de la linea de comando activando el ambiente virtual.
 
 hasta aqui el proceso es similar al de la siguiente imagen:
 
-![Esquema base de datos](static/complementos/crear_entorno_python.PNG)
-
-
-
+![imagen crear entorno vritual de python](static/complementos/crear_entorno_python.PNG)
 
 3. clonar el repositorio. Ejecutar en linea de comandos:
 
 ***git clone https://github.com/gcamachoj/CarRepair_pro_crud.git***
+
+![imagen crear entorno vritual de python](static/complementos/clonar_repositorio.PNG)
 
 4. Ingresar a la carpeta CarRepair_pro_crud.
 
@@ -33,9 +32,14 @@ hasta aqui el proceso es similar al de la siguiente imagen:
 
 ***pip install -r requirements.txt***
 
+![imagen instalacion de dependencias](static/complementos/instalar_dependencias.PNG)
+
+
 6. ejecutar la aplicacion. Ejecutar:
 
 ***flask run***
+
+![Ejecutar aplicación](static/complementos/instalar_dependencias.PNG)
 
 Este comando creará la ruta del servidor. Ingrese dicha ruta en el explorador de internet.
 
@@ -47,11 +51,13 @@ Este comando creará la ruta del servidor. Ingrese dicha ruta en el explorador d
 ![Esquema base de datos](static/complementos/ESQUEMA%20RELACIONAL%20DE%20BASE%20DE%20DATOS.png)
 <figcaption>Modelo Relacional de base de datos</figcaption>
 
-7.2. Cargue la carpeta creada en el IDE "visual studio code" o el ide de su preferencia. Posteriormente Abra una terminal de linea de comando nueva en la carpeta de CarRepair_pro_crud.
+7.2. Cargue la carpeta creada en el IDE "visual studio code" o el IDE de su preferencia. Posteriormente Abra una terminal de linea de comando nueva en la carpeta de CarRepair_pro_crud.
 
 8. Para la instalacion de la base de datos desacargue el archivo del script (20240324_script_creación_bd_taller_v3.sql), incluido en la carpeta static/complementos:
 
 9. Cargue el script en su aplicación de MySQL y ejecutelo. El scritp creará la base de datos "taller" con todas las tablas.  Actualice el listado de base de datos para verificar la nueva base de datos existente. Mantenga abierta la ventana de la aplicación de MySQL para validar los procedimientos CRUD.
+
+![Esquema base de datos](static/complementos/cargar_script_sql.PNG)
 
 10. Modifique la parametrización de conexión a la base de datos en el archivo app.py en la linea:
 
@@ -80,6 +86,13 @@ Esta versión de la aplicación se limita a pruebas de CRUD desde la línea de c
 desde linea de comandos ejecutar:
 ***python crear_ciudad.py***
 Este archivo ejecuta la creación de la ciudad predeterminada en el script del archivo. Puede modificar el argumento en el final del archivo para incluir otra ciudad en la linea que contiene:
+
+![Esquema base de datos](static/complementos/comando_crear_ciudad.PNG)
+
+Validación:
+
+![Esquema base de datos](static/complementos/crear_ciudad_validacion.PNG)
+
 
 ***print(crear_ciudad('Bogota'))***
 Ingrese a las tablas de la base de datos para verificar los resultados.
